@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import About from './components/About'
 import Home from './components/Home'
-import {Link, Route} from 'react-router-dom'
+import {NavLink, Route} from 'react-router-dom'
 export default class App extends Component{
   render(){
     return (
@@ -14,8 +14,8 @@ export default class App extends Component{
         <div className="row">
           <div className="col-xs-2 col-xs-offset-2">
             <div className="list-group">
-              <Link className="list-group-item"  to="/About">About</Link>
-              <Link className="list-group-item" to="/Home" >Home</Link>
+              <NavLink className="list-group-item" to="/About">About</NavLink>
+              <NavLink className="list-group-item" to="/Home" >Home</NavLink>
             </div>
           </div>
           <div className="col-xs-6">
